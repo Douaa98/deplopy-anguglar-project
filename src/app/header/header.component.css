@@ -14,7 +14,7 @@ a:hover{
 }
 
 .container{
-    margin-top: 3px;
+    margin-top: 2px;
     display: flex;
     justify-content: start;
     border-bottom: 1px solid brown;
