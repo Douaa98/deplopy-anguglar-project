@@ -1,0 +1,23 @@
+
+
+ul{
+    display: flex;
+    justify-content: center;
+    flex-wrap: wrap;
+}
+li a{
+    height: 300px;
+    width: 320px;
+    border: 1px solid brown;
+    border-radius: 20px;
+    margin: 15px;
+    display: flex;
+    flex-direction: column;
+    overflow: hidden
+    ;
+}
+li a:hover{
+    opacity: 0.9;
+    cursor: pointer;
+}
+
