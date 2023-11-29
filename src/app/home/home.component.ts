@@ -14,11 +14,10 @@ export class HomeComponent implements OnInit{
   constructor(private foodService:FoodService ,private route:ActivatedRoute ) { }
   ngOnInit(): void {
     this.route.params.subscribe(params => {
-      console.log("list ",this.foods);
-      if(params['searchTerm']){
-   
+      /*console.log("list ",this.foods);*/
+      if(params['searchTerm'])
       this.foods=this.foodService.getAll().filter(food =>food.name.toLowerCase().includes(params['searchTerm'].toLowerCase()));
-    } else
+    else
       this.foods=this.foodService.getAll();
     })
     
