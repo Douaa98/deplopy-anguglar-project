@@ -6,10 +6,11 @@ ul{
     flex-wrap: wrap;
 }
 li a{
+  
     height: 300px;
     width: 320px;
     border: 1px solid brown;
-    border-radius: 20px;
+    border-radius: 20px 20px 0px 0px;
     margin: 15px;
     display: flex;
     flex-direction: column;
@@ -21,4 +22,20 @@ li a:hover{
     cursor: pointer;
 }
 
+.content{
+    padding: 10px 0px;
+    font-size: 15px;
+    text-align: center;
+    color: brown;
+    font-weight: bold;
+    border-radius: 12px;
+}
+ul li{
+    box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;
+    margin: 15px;
+    border-radius: 12px;
 
+}
+li:nth-child(6) {
+    padding: 10px;
+}
