@@ -9,18 +9,19 @@ export class FoodService {
   constructor() { }
   getAllTags():Tag[]{
     return[
-      {name: 'all' ,count:11},
-      {name: 'Fastfood' ,count:4},
+      {name: 'all' ,count:8},
+      {name: 'Fastfood' ,count:3},
       {name: 'pizaa' ,count:2},
-      {name: 'lunch' ,count:3},
-      {name: 'slàwfood' ,count:2},
+      {name: 'lunch' ,count:1},
+      {name: 'SlowFood' ,count:2},
 
     ]
 
   }
   getAllFoodByTag(tag:string):food[]{
    
-    return tag =="All"? this.getAll() : this.getAll().filter(food =>food.tags?.includes(tag)) 
+    return tag =="All"? this.getAll() : 
+    this.getAll().filter(food =>food.tags?.includes(tag)); 
    }
   getAll():food[]{
     return[
@@ -33,7 +34,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4.5,
         imageUrl: '/assets/images/foods/beef-steak-with-vegetables.jpg',
-        tags: ['FastFood', 'Pizza', 'Lunch'],
+        tags: ['fastfood', 'Lunch'],
       },
       {
         id: 2,
@@ -44,7 +45,7 @@ export class FoodService {
         origins: ['persia', 'middle east', 'china'],
         stars: 4.7,
         imageUrl: '/assets/images/foods/burger-with-melted-cheese.jpg',
-        tags: ['SlowFood', 'Lunch'],
+        tags: ['SlowFood', 'pizza'],
       },
       {
         id: 3,
@@ -55,7 +56,7 @@ export class FoodService {
         origins: ['germany', 'us'],
         stars: 3.5,
         imageUrl: '/assets/images/foods/chickpea-salad.jpg',
-        tags: ['FastFood', 'Hamburger'],
+        tags: ['fastfood', 'Hamburger'],
       },
       {
         id: 4,
@@ -66,7 +67,7 @@ export class FoodService {
         origins: ['belgium', 'france'],
         stars: 3.3,
         imageUrl: '/assets/images/foods/crispy-spicy-chicken-wings.jpg',
-        tags: ['FastFood', 'Fry'],
+        tags: ['fastfood','Hamburger' ],
       },
       {
         id: 5,
@@ -77,7 +78,7 @@ export class FoodService {
         origins: ['india', 'asia'],
         stars: 3.0,
         imageUrl: '/assets/images/foods/turkey-dinner.jpg',
-        tags: ['SlowFood', 'Soup'],
+        tags: ['SlowFood', 'pizza'],
       },
       
     ]
