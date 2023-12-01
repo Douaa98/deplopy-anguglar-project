@@ -9,19 +9,31 @@ export class FoodService {
   constructor() { }
   getAllTags():Tag[]{
     return[
+<<<<<<< HEAD
       {name: 'all' ,count:8},
       {name: 'Fastfood' ,count:3},
       {name: 'pizaa' ,count:2},
       {name: 'lunch' ,count:1},
       {name: 'SlowFood' ,count:2},
+=======
+      {name: 'all' ,count:11},
+      {name: 'Fastfood' ,count:4},
+      {name: 'pizaa' ,count:2},
+      {name: 'lunch' ,count:3},
+      {name: 'slàwfood' ,count:2},
+>>>>>>> 85ca61811c1a70aca7da293e12c94a95a60db485
 
     ]
 
   }
   getAllFoodByTag(tag:string):food[]{
+<<<<<<< HEAD
    
     return tag =="All"? this.getAll() : 
     this.getAll().filter(food =>food.tags?.includes(tag)); 
+=======
+    return tag =="All"? this.getAll() : this.getAll().filter(food =>food.tags?.includes(tag)) 
+>>>>>>> 85ca61811c1a70aca7da293e12c94a95a60db485
    }
   getAll():food[]{
     return[

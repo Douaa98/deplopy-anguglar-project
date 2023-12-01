@@ -1,6 +1,9 @@
 import { Component } from '@angular/core';
 import { Tag } from '../shared/models/Tag';
+<<<<<<< HEAD
 import { FoodService } from '../services/food/food.service';
+=======
+>>>>>>> 85ca61811c1a70aca7da293e12c94a95a60db485
 
 @Component({
   selector: 'app-tags',
@@ -10,6 +13,7 @@ import { FoodService } from '../services/food/food.service';
 export class TagsComponent {
  
   tags: Tag[] = [];
+<<<<<<< HEAD
  
     constructor(private foodservice:FoodService){ }
 
@@ -21,3 +25,9 @@ export class TagsComponent {
   
    
 }
+=======
+  
+  constructor(){ }
+
+}
+>>>>>>> 85ca61811c1a70aca7da293e12c94a95a60db485
