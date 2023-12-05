@@ -10,13 +10,13 @@ import { FoodService } from '../services/food/food.service';
 export class TagsComponent {
  
   tags: Tag[] = [];
- 
+
     constructor(private foodservice:FoodService){ }
 
     NgOnInit():void{
       this.tags=this.foodservice.getAllTags();
-     
-
+      
+      
     }
   
    
