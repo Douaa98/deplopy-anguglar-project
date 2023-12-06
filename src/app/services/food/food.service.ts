@@ -1,12 +1,17 @@
 import { Injectable } from '@angular/core';
 import { food } from 'src/app/shared/models/food';
 import { Tag } from 'src/app/shared/models/Tag';
+
 @Injectable({
   providedIn: 'root'
 })
 export class FoodService {
 
+
   constructor() { }
+  getFoodById(id: number):food{
+    return this.getAll().find(food => food.id == id)!;
+  }
   getAllTags():Tag[]{
     return[
       {name: 'all' ,count:8},
