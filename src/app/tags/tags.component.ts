@@ -8,10 +8,10 @@ import { FoodService } from '../services/food/food.service';
   styleUrls: ['./tags.component.css']
 })
 export class TagsComponent {
+  
   @Input()
   foodPageTags?:string[]
- 
-  tags: Tag[] = [];
+  tags?: Tag[] ;
 
     constructor(private foodservice:FoodService){ }
 

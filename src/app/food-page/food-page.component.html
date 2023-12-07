@@ -1,14 +1,15 @@
 <div class="container">
-    <img [src]="food.imageUrl" [alt]="food.name" height="200px" width="300px"/>
+    <img [src]="food.imageUrl" [alt]="food.name" />
     <div class="details">
         <div class="header">
             <span class="name">
                 {{food.name}}
-            </span> </div>
-        <br>
+            </span> 
             <span class="favorite">
                 ❤
             </span>
+        </div>
+           
             <div class="origins">
                 <span *ngFor="let origin of food.origins">
                     {{origin}}
@@ -24,6 +25,8 @@
             <div class="price">
                 <span>{{food.price | currency}}</span>
             </div>
+            <button>Add to Card</button>
         </div>
+        
     </div>
 

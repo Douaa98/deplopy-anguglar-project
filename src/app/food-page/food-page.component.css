@@ -1,0 +1,63 @@
+.container{
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    flex-wrap: wrap;
+    margin: 20px;
+}
+img{
+    height: 400px;
+    width: 600px;
+    max-width: 400px;
+    max-height: 300px;
+    border-radius: 20px;
+    flex :1 0;
+    object-fit: cover;
+    height: 350px;
+    margin: 20px;
+}
+.details{
+    width: 100%;
+    flex: 1 0;
+    color: black;
+    border-radius: 30px;
+    padding: 20px;
+    margin-left: 5px;  
+  line-height: 3;
+  font-family: 'Roboto', sans-serif !important;
+    
+}
+.favorite{
+    margin-left: 40px;
+    color:brown;
+
+}
+.details .name{
+    color: brown;
+    font-weight: bolder;
+}
+.origins span {
+   padding: 5px 13px;
+    background-color: gainsboro;
+    border-radius: 20px;
+    color: black;
+    margin-left: 8px;
+}
+.details .cooktime{
+    font-size: 15px;
+   
+}
+.details .price{
+    color: green;
+    font-weight: bold;
+    
+
+}
+.details button{
+    background-color: red;
+    border: none;
+    border-radius: 20px;
+    padding: 10px 110px;
+    color: white;
+    font-size: 15px;
+}
