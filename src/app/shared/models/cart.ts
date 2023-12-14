@@ -9,5 +9,5 @@ export class Cart{
             {totalPrice += item.price;
             });
             return totalPrice;
-    }
+        }
 }

@@ -11,7 +11,10 @@ import { CartItem } from '../shared/models/CartItem';
 export class CartPageComponent {
 
   cart!:Cart;
-constructor(private cartService:CartService){}
+constructor(private cartService:CartService){
+
+  this.setCart();
+}
 removeFromcart(CartItem:CartItem){
   this.cartService.removeFromCart(CartItem.food.id);
   this.setCart();
