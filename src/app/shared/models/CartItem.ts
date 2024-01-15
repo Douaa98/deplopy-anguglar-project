@@ -1,5 +1,6 @@
 import { food } from "./food";
 export class CartItem{
+[x: string]: any;
     constructor(food:food){
         this.food=food
     }

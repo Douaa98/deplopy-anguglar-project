@@ -9,6 +9,12 @@ export class FoodService {
 
 
   constructor() { }
+
+  getAllfoodBySearchTerm(searchTerm:string):food[]{
+  return this.getAll().filter(food =>food.name.toLowerCase().includes(searchTerm.toLowerCase()));
+
+
+  }
   getFoodById(id: number):food{
     return this.getAll().find(food => food.id == id)!;
   }
@@ -39,7 +45,7 @@ export class FoodService {
         origins: ['italy'],
         stars: 4.5,
         imageUrl: '/assets/images/foods/beef-steak-with-vegetables.jpg',
-        tags: ['fastfood', 'Lunch'],
+        tags: ['Lunch'],
       },
       {
         id: 2,
