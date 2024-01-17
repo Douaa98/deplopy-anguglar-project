@@ -1,4 +1,56 @@
-img{
-    height: 150px ;
-    width: 150px;
+ul li img{
+    height: 100px ;
+    width: 100px;
+    border-radius: 50% ;
+    object-fit: cover;
+    margin-right: 30px;
+
+}
+.container{
+    display: flex;
+    flex-wrap: wrap;
+    align-items: flex-start;
+   
+}
+ul{
+    display: flex;
+    flex-direction: column;
+    flex: 3 0;
+    justify-content: space-evenly;
+    border-radius: 10px;
+    list-style-type: none;
+    margin: 50px ;
+    padding: 0px;
+}
+ul li{
+    display: flex;
+    justify-content: space-around;
+    align-items: center;
+    flex-wrap: wrap;
+    border-bottom: 2px solid brown;
+    padding: 20px 0px;
+}
+ul li:last-child{
+    border: none;
+}
+ul li div:not(:first-child){
+    flex-basis: 18%;
+}
+ul li select{
+    width: 30px;
+    outline: none;
+    border: none;
+    border-bottom: 1px solid brown;
+    font-size: 15px;
+    font-family: 200;
+}
+ul .removeButton {
+border-radius: 20px;
+border :1px solid brown;
+color: brown;
+outline: none;
+padding: 10px 30px;
+font-weight: bold;
+cursor: pointer;
+
 }
