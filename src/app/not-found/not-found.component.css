@@ -6,4 +6,13 @@ flex-direction: column;
 font-size: 18px;
 font-weight: 300;
 height: 20vh;
+margin: 30px;
+}
+div a {
+    font-size: 15px;
+    background-color: brown;
+    color: white;
+    border-radius: 20px;
+    padding: 12px 23px;
+    margin: 15px;
 }
